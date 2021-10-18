@@ -25,6 +25,7 @@ int main(){
 	printf(" 2. Fahrenheit\n");
 	printf(" 3. Kelvin\n");
 	printf(" 4. Semua\n");
+	printf(" 5. Keluar program\n");
 	printf("================================================\n");
 	printf("Masukkan pilihan anda : ");
 	scanf("%d", &convsuhu);
@@ -79,11 +80,14 @@ int main(){
 			printf("===================================\n");
 			printf(" Masukkan Suhu Celcius : ");
    		  	scanf("%d", &c);
-  	   		/* Output func.kelvin */
+  	   		/* Output func.all */
    		  	printf("\n");
   	   		printf(" Output: \n");
   	   		all(c);
 			break;
+		// Exit
+		case 5:
+			return 0;
 		default:
 			system("cls");
 			printf("Format input salah. . .\n");
